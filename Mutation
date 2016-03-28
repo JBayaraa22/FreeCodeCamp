@@ -1,0 +1,15 @@
+function mutation(arr) {
+  var str1 = arr[1] , count=0;
+  str1 = str1.toLowerCase();
+  str1 = str1.split("");
+  for(var i = 0 ; i<str1.length;i++)
+    {
+      if(arr[0].indexOf(str1[i])!=-1)
+        count++;
+    }
+  if(count==str1.length)
+    return true;
+  return false;
+}
+
+mutation(["Mary", "Army"]);
